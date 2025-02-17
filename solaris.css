@@ -1,0 +1,41 @@
+/* Eliminar fondo global que afecta a la navbar */
+body {
+    background-color: #F3DFE0;
+}
+
+/* Asegurar que la navbar está alineada correctamente */
+.navbarSection {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Asegurar que la navbar se vea bien */
+.navbar {
+    width: 100%;
+}
+
+
+.seccion {
+    height: 100vh; /* Cada sección ocupará toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Cuando se activa, la sección aparece */
+.seccion.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer{
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    padding: 10px 0;
+}
