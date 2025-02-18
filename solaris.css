@@ -16,10 +16,11 @@ body {
     width: 100%;
 }
 
-
+/* Secciones */
 .seccion {
     height: 100vh; /* Cada sección ocupará toda la pantalla */
     display: flex;
+    flex-direction: column; /* Para que el título esté encima */
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -33,9 +34,50 @@ body {
     transform: translateY(0);
 }
 
-footer{
+/* Contenedor de cards */
+.card-container {
     display: flex;
-    justify-content: center;  /* Centra horizontalmente */
+    justify-content: center;  /* Centrar cards */
+    gap: 20px;  /* Espacio entre cards */
+    flex-wrap: wrap; /* Para que sean responsivas */
+    max-width: 900px;
+}
+
+/* Estilo de la card */
+.card-animated {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Imagen dentro de la card */
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Contenido de la card */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Animación de salto al pasar el cursor */
+.card-animated:hover,
+.card-animated:active {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding: 10px 0;
 }
