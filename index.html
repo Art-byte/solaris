@@ -3,151 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="solaris.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
     <div class="content">
+        <!-- INICIO NAVBAR -->
         <div class="navbarSection">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="#">
-                        <i class="bi bi-list me-2"></i> Navbar
+                        <img src="img/logo.png" alt="Logo Solaris" class="me-2" style="width: 30px; height: 30px;">
+                        SOLARIS
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#navbarTogglerDemo1" 
+                            aria-controls="navbarTogglerDemo1" 
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo1">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                            <li class="navbar-item active">
+                                <a class="nav-link" href="#acercaDeMi">Acerca de mi</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                            <li class="navbar-item active">
+                                <a class="nav-link" href="#ilustracionDigital">Ilustración digital</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
+                            <li class="navbar-item active">
+                                <a class="nav-link" href="#galeriaModelos">Galeria de modelo</a>
+                            </li>
+                            <li class="navbar-item active">
+                                <a class="nav-link" href="#galeriaMuseos">Galeria de museo</a>
                             </li>
                         </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                     </div>
-                </div>
-                <div class="d-flex align-items-center gap-3">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
-                        <i class="bi bi-heart"></i>
-                    </a>
-                    <a class="navbar-brand d-flex align-items-center" href="#">
-                        <i class="bi bi-person"></i>
-                    </a>
-                    <a class="navbar-brand d-flex align-items-center" href="#">
-                        <i class="bi bi-bag"></i>                    
-                    </a>
                 </div>
             </nav>
         </div>
+         <!-- FIN NAVBAR -->
+         <section id="acercaDeMi" class="seccion fade-in">
+            <div class="container py-5">
+              <div class="row g-4 min-vh-100 d-flex align-items-stretch border rounded shadow-sm">
+                <div class="col-md-6">
+                  <div class="h-100 w-100">
+                    <img src="img/ilse.jpg" alt="Acerca de mí" class="img-fluid h-100 w-100 object-fit-cover rounded-start">
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center bg-light rounded-end">
+                  <div class="p-4 text-center">
+                    <h1 class="fw-bold mb-4">Acerca de mí</h1>
+                    <p class="lead">
+                      ¡Hola! Soy un artista digital apasionado por la ilustración y la creación visual.
+                      Este espacio es donde comparto mi visión, mi experiencia, y lo que me inspira a crear cada día.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <section class="seccion fade-in">
-            <div class="d-flex flex-column align-items-center my-4">
-                <h1 class="fw-bold text-center">GALERIA</h1>
-                <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-                    <img src="img/palmeras.jpeg" class="img-fluid rounded shadow" style="width: 300px; height: auto;">
-                    <img src="img/palmeras.jpeg" class="img-fluid rounded shadow" style="width: 300px; height: auto;">
-                    <img src="img/palmeras.jpeg" class="img-fluid rounded shadow" style="width: 300px; height: auto;">
-                </div>
-            </div>
-        </section>
-    
-        <section class="seccion fade-in">
-            <div class="d-flex flex-column align-items-center my-4">
-                <h1 class="fw-bold text-center">MUESTRAS</h1>          
-                <div class="d-flex justify-content-center align-items-start gap-3">
-                    <img src="img/maceta.jpg" class="img-fluid rounded shadow" style="width: 300px; height: auto;">
-                    <div class="d-flex flex-column gap-3">
-                        <img src="img/palmeras.jpeg" class="img-fluid rounded shadow" style="width: 300px; height: auto;">
-                        <img src="img/hojas.jpeg" class="img-fluid rounded shadow" style="width: 300px; height: auto;">
+          <section id="ilustracionDigital" class="seccion fade-in">
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12">
+                        <img src="img/ilusracion.jpeg" alt="Ilustración digital" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>        
+                    <div class="col-12 text-center mt-4">
+                        <h1 class="fw-bold">Ilustración digital</h1>
+                        <p class="lead">
+                            Aquí podrás descubrir mis proyectos más recientes de ilustración digital, donde combino creatividad y técnica para dar vida a impresionantes obras.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        
-    
-        <section class="seccion fade-in d-flex flex-column align-items-center text-center">
-            <h2 class="fw-bold mb-4">Prueba Carrusel</h2>
-        
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 600px; width: 100%;">
-                <!-- Indicadores -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Ilustración Digital</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 600px; width: 100%;">
+                            <!-- Indicadores -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                            </div>                    
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/ilustracion/ilu1.png" alt="First slide" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/ilustracion/ilu2.png" alt="First slide" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/ilustracion/ilu3.png" alt="First slide" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/ilustracion/ilu4.jpg" alt="First slide" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/ilustracion/ilu5.jpg" alt="First slide" style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/ilustracion/ilu6.jpg" alt="First slide" style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>                   
+                            <!-- Controles (prev y next) -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="background: rgba(0, 0, 0, 0.5); width: 50px;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="background: rgba(0, 0, 0, 0.5); width: 50px;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-        
-                <!-- Contenedor de imágenes -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/palmeras.jpeg" alt="First slide" style="height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/maceta.jpg" alt="Second slide" style="height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/SolarisLogo.png" alt="Third slide" style="height: 400px; object-fit: cover;">
-                    </div>
-                </div>
-        
-                <!-- Controles (prev y next) -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="background: rgba(0, 0, 0, 0.5); width: 50px;">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="background: rgba(0, 0, 0, 0.5); width: 50px;">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
-        </section>
-        
-        <section class="seccion fade-in text-center">
-            <h2 class="fw-bold mb-4">Card con animación</h2>
+        </div>
 
-            <div class="card-container">
-                <div class="card-animated">
-                    <img src="img/maceta.jpg" alt="Maceta" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Maceta</h5>
-                        <p class="card-text">Una hermosa maceta para tu jardín.</p>
-                    </div>
-                </div>
-                <div class="card-animated">
-                    <img src="img/palmeras.jpeg" alt="Maceta" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Maceta</h5>
-                        <p class="card-text">Una hermosa maceta para tu jardín.</p>
-                    </div>
-                </div>
-                <div class="card-animated">
-                    <img src="img/hojas.jpeg" alt="Maceta" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Maceta</h5>
-                        <p class="card-text">Una hermosa maceta para tu jardín.</p>
-                    </div>
-                </div>
-            </div>
+
+        <section id="galeriaModelos" class="seccion fade-in">
+            <div class="d-flex flex-column aling-items-center my-4">
+                <h1 class="fw-bold text-center">Galeria de modelos</h1>
+            </div>                      
         </section>
-            
+
+        <section id="galeriaMuseos" class="seccion fade-in">
+            <div class="d-flex flex-column aling-items-center my-4">
+                <h1 class="fw-bold text-center">Galeria de museos</h1>
+            </div>                      
+        </section>
+
+
         <footer>
             <p>© 2025 Solaris Web</p>
         </footer>
     </div>
-
+    <!-- LLAMADA A SCRIPT PRINCIPAL -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
-
 </html>
