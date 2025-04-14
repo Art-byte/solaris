@@ -1,96 +1,116 @@
-body{
+body {
     background-color: #F3DFE0;
     padding-top: 80px; /* Ajusta según la altura de tu navbar */
 }
 
-.navbarSection{
+.navbarSection {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
 }
 
-.navbar{
+.navbar {
     width: 100%;
 }
 
 .navbar-brand img {
-    width: 30px;  /* Ajusta el tamaño de la imagen */
-    height: 30px; /* Ajusta el tamaño de la imagen */
-    margin-right: 8px; /* Espacio entre la imagen y el texto */
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
 }
 
 /* Sections */
-.seccion{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.seccion {
+    padding: 80px 0; /* Espacio arriba y abajo para separar visualmente */
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+/* Agrega separación entre secciones */
+.seccion + .seccion {
+    margin-top: 60px;
+}
+
 /* Cuando se activa, la sección aparece */
-.seccion.show{
+.seccion.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Asegurarnos de que no haya bordes ni márgenes inesperados en las secciones */
-.seccion, .row, .col-md-6 {
-    border: none;  /* Elimina cualquier borde */
-    margin: 0;  /* Elimina el margen por defecto */
-    padding: 0; /* Elimina el padding extra que pudiera estar afectando */
+/* Elimina márgenes/paddings innecesarios */
+.row, .col-md-6 {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Si deseas mantener el borde solo en ciertas secciones, puedes añadirlo manualmente */
+/* Opcional: borde solo si se desea */
 .seccion.custom-border {
-    border: 2px solid #ccc; /* ejemplo de borde */
+    border: 2px solid #ccc;
 }
 
-/* Asegurarse de que las imágenes también no tengan bordes */
+/* Estilo para imágenes */
 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
     border: none;
 }
 
-
-.modal-body img {
-    max-height: 500px; /* Limitar la altura máxima de la imagen */
-    object-fit: cover; /* Asegurar que la imagen se ajuste bien */
+/* === MODAL ILUSTRACIÓN DIGITAL === */
+.ilustracion-modal .modal-content {
+    background-color: #fff; /* o transparent si prefieres sin fondo */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
 }
 
-/* Personalizar el texto del modal */
-.modal-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    align-items: center;
-}
-
-/* Asegurarse de que el modal esté centrado y bien estilizado */
-.modal-dialog-centered {
+.ilustracion-modal .modal-body {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fefefe;
 }
 
-.modal-content {
+.ilustracion-modal img {
+    object-fit: contain;
+    max-height: 90vh;
+    width: 100%;
+}
+
+
+/* Carrusel dentro del modal de ilustración */
+.ilustracion-modal .carousel-inner {
+    max-height: 90vh;
+}
+
+.ilustracion-modal .carousel-item img {
+    object-fit: contain;
+    max-height: 90vh;
+}
+
+/* Estilo personalizado para las leyendas del carrusel */
+.ilustracion-caption {
+    position: static;
+    text-align: center;
     background-color: #F3DFE0;
-    padding: 20px;
-    border-radius: 10px; /* Borde redondeado opcional */
-}
-
-/* Estilo de los controles del carousel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #062457; /* Color personalizado para los íconos */
-}
+    color: #000000;
+    padding: 10px;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
 
 
-
-footer{
-    display :flex;
+/* Footer */
+footer {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
