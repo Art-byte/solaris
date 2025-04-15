@@ -331,13 +331,73 @@
 
 
 
-        <section id="galeriaMuseos" class="seccion fade-in">
-            <div class="d-flex flex-column aling-items-center my-4">
-                <h1 class="fw-bold text-center">Galeria de museos</h1>
-            </div>                      
-        </section>
+          <section id="galeriaMuseos" class="seccion fade-in">
+            <div class="container py-5">
+              <div class="row justify-content-center align-items-center mb-4">
+                <!-- Imagen primero -->
+                <div class="col-md-6 text-center">
+                  <img src="img/museos/museos.jpg" alt="Museos" class="img-fluid modelos-icon" data-bs-toggle="modal" data-bs-target="#modalMuseos" style="cursor:pointer;">
+                </div>
+                <!-- Título después -->
+                <div class="col-md-6 text-center">
+                  <h1 class="fw-bold mb-3">Galería de museos</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <p class="lead">
+                    Esta sección está compuesta de fotos de museos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <!-- Modal Museos -->
+          <div class="modal fade modal-museos" id="modalMuseos" tabindex="-1" aria-labelledby="modalMuseosLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalMuseosLabel">Galería de Museos</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Carrusel de museos -->
+                  <div id="carouselMuseos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/museos/munal 7.JPG" class="d-block w-100" alt="Museo 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/museos/munal 8.JPG" class="d-block w-100" alt="Museo 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/museos/20241017_132319.jpg" class="d-block w-100" alt="Museo 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMuseos" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMuseos" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
 
+                  <!-- Descripción -->
+                  <div class="mt-4 text-center">
+                    <p class="lead">
+                      Esta colección muestra diferentes museos con un enfoque cultural e histórico.
+                      Cada imagen representa una obra, sala o instalación significativa en el recorrido visual.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
         <footer>
             <p>© 2025 Solaris Web</p>
         </footer>
