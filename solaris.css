@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Cream demo';
-  src: url('fonts/cream.otf') format('opentype');
+  font-family: 'Perfect';
+  src: url('fonts/KGPerfectPenmanship.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -252,6 +252,6 @@ h1 {
 }
 
 p, li, h5, button, strong {
-  font-family: 'Cream demo', sans-serif;
+  font-family: 'Perfect', sans-serif;
 
 }
