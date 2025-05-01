@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Rosie Brown';
+  src: url('fonts/Rosie Brown Serif Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elegante clasica';
+  src: url('fonts/Elegante Classica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     background-color: #F3DFE0;
     padding-top: 80px; /* Ajusta según la altura de tu navbar */
@@ -229,4 +243,14 @@ footer {
 .modal-body-person img {
   max-height: 300px;
   object-fit: contain;
+}
+
+
+/* DEFINICION DE FUENTES PARA DISTINAS SECCIONES */
+h1 {
+  font-family: 'Rosie Brown', serif;
+}
+
+p, li, h5, button, strong {
+  font-family: 'Elegante clasica', sans-serif;
 }

@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     showSections();
     showCardsContainer();
     showCardsMuseosContainer();
+    showCardsPersonajesContainer();
 });
 
 
@@ -44,7 +45,7 @@ function showCardsMuseosContainer(){
         }
     });
 }
-function showCardsMuseosContainer(){
+function showCardsPersonajesContainer(){
     document.getElementById('mostrarCardsPersonajesBtn').addEventListener('click', function(){
         const cardContainer = document.getElementById('cardsContainerPersonajes');
         if(cardContainer.style.display === 'none'){
