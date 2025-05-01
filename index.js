@@ -19,12 +19,24 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", showSections);
     showSections();
     showCardsContainer();
+    showCardsMuseosContainer();
 });
 
 
 function showCardsContainer(){
     document.getElementById('mostrarCardsBtn').addEventListener('click', function(){
         const cardContainer = document.getElementById('cardsContainer');
+        if(cardContainer.style.display === 'none'){
+            cardContainer.style.display = 'flex';
+        } else {
+            cardContainer.style.display = 'none';
+        }
+    });
+}
+
+function showCardsMuseosContainer(){
+    document.getElementById('mostrarCardsMuseosBtn').addEventListener('click', function(){
+        const cardContainer = document.getElementById('cardsContainerMuseos');
         if(cardContainer.style.display === 'none'){
             cardContainer.style.display = 'flex';
         } else {
