@@ -41,6 +41,9 @@
                                 <a class="nav-link" href="#galeriaMuseos">Galeria de museo</a>
                             </li>
                             <li class="navbar-item active">
+                                <a class="nav-link" href="#galeriaPersonajes">Galeria de Personajes</a>
+                            </li>
+                            <li class="navbar-item active">
                                 <a class="nav-link" href="#galeriaLogos">Galeria de logos</a>
                             </li>
                         </ul>
@@ -101,9 +104,7 @@
                       <li>Edición de Video: Postproducción y narrativas audiovisuales.</li>
                     </ul>
                   </div>
-                </div>
-          
-                <!-- Columna Derecha -->
+                </div>          
                 <div class="col-md-6 d-flex align-items-center justify-content-center rounded-end">
                   <div class="p-4 text-center">
                     <h1 class="fw-bold mb-4">RESUMEN<br>SOFTWARE</h1>
@@ -135,7 +136,7 @@
                     <div class="col-12 text-center mt-4">
                         <h1 class="fw-bold">Ilustración digital</h1>
                         <div class="col-12">
-                            <img src="img/ilusracion.jpeg" alt="Ilustración digital" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="img/ilustracion/IluPortada.jpg" alt="Ilustración digital" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
                         </div>  
                         <p class="lead">
                             Aquí podrás descubrir mis proyectos más recientes de ilustración digital, donde combino creatividad y técnica para dar vida a impresionantes obras.
@@ -685,11 +686,156 @@
         </div> 
 
 
+        <section id="galeriaPersonajes" class="seccion fade-in">
+          <div class="container py-5">
+            <!-- Título y imagen -->
+            <div class="row justify-content-center align-items-center mb-4">
+              <div class="col-md-6 text-center">
+                <h1 class="fw-bold mb-3">Galería de Personajes</h1>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="img/personajes/boceto.jpg" alt="Modelos" class="img-fluid modelos-icon">
+              </div>
+            </div>
+            <!-- Texto de descripción -->
+            <div class="row">
+              <div class="col text-center">
+                <p class="lead">
+                  En esta sección mostraremos la creación de los personajes paso a paso                
+                </p>
+              </div>
+            </div>
+        
+            <!-- Botón para mostrar las cards -->
+            <div class="row justify-content-center">
+              <div class="col text-center">
+                <button class="btn btn-primary" id="mostrarCardsPersonajesBtn">Conócelos...</button>
+              </div>
+            </div>
+        
+            <!-- Cards ocultas -->
+            <div class="row justify-content-center mt-4" id="cardsContainerPersonajes" style="display: none;">
+              <div class="col-md-4">
+                <div class="card" id="modelo1" data-bs-toggle="modal" data-bs-target="#phanModal">
+                  <img src="img/personajes/Phan1.png" alt="Modelo 1" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Brujita Fantasma Luna</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" id="modelo2" data-bs-toggle="modal" data-bs-target="#milkModal">
+                  <img src="img/personajes/milk1.png" alt="Modelo 2" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Lechita Iris</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="modal fade" id="phanModal" tabindex="-1" aria-labelledby="modelo1ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modelo1ModalLabel">Brujita Fantasma Luna</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-body-person">
+                  <div class="row">
+                    <!-- Columna de texto -->
+                    <div class="col-md-6">
+                      <h6 class="fw-bold mb-3">Proceso creativo</h6>
+                      <p>
+                        Comencé con el proceso de bocetaje que me inspiré en un amigurumi que tengo (los amigurumis son muñecos tejidos).
+                      </p>
+                      <p>
+                        Posteriormente comencé a bocetar mi fantasma, quería que tuviera un toque mágico y le coloqué una varita mágica.
+                      </p>
+                      <p>
+                        Posteriormente sentí que algo le hacía falta así que le coloqué un sombrero de bruja, queriendo hacer alusión a que era una fantasma bruja. Por eso le agregué la capa, le di color y por último diseñé diferentes versiones del fantasma.
+                      </p>
+                    </div>
+                    <!-- Columna de imagen -->
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/phan2.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/phan3.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/phan4.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/phan5.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/phan6.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="milkModal" tabindex="-1" aria-labelledby="modelo1ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modelo1ModalLabel">Brujita Fantasma Luna</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-body-person">
+                  <div class="row">
+                    <!-- Columna de texto -->
+                    <div class="col-md-6">
+                      <h6 class="fw-bold mb-3">Proceso creativo</h6>
+                      <p>
+                        Comencé haciendo bocetos sobre los objetos con tematica cartoon y se me ocurrió la idea de hacer una leche de arcoiris amigable y colorida, es por ello el que el diseño inicial fue simple, pero comencé a agregarle estrellas y liquido escurrido.
+                      </p>
+                      <p>
+                        Posteriormente comencé a darle color, queria que tuviera tonos pastel y ciertos defradados para darle el arcoiris que estaba buscando.
+                      </p>
+                      <br>
+                    </div>
+                    <!-- Columna de imagen -->
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/milk2.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/milk3.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                      <img src="img/personajes/milk1.png" alt="Diseño del personaje Phan" class="img-fluid rounded shadow">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
       <section id="galeriaLogos" class="seccion fade-in">
           <div class="container py-5">
               <div class="row d-flex justify-content-center align-items-center">
                   <div class="col-12 text-center mt-4">
-                      <h1 class="fw-bold">Ilustración digital</h1>
+                      <h1 class="fw-bold">Logotipos</h1>
                       <div class="col-12">
                           <img src="img/logo.png" alt="Ilustración digital" class="img-fluid w-100 rounded" data-bs-toggle="modal" data-bs-target="#logosModal">
                       </div>  

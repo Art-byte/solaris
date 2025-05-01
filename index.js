@@ -44,3 +44,13 @@ function showCardsMuseosContainer(){
         }
     });
 }
+function showCardsMuseosContainer(){
+    document.getElementById('mostrarCardsPersonajesBtn').addEventListener('click', function(){
+        const cardContainer = document.getElementById('cardsContainerPersonajes');
+        if(cardContainer.style.display === 'none'){
+            cardContainer.style.display = 'flex';
+        } else {
+            cardContainer.style.display = 'none';
+        }
+    });
+}

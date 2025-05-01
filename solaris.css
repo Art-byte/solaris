@@ -223,3 +223,10 @@ footer {
   margin-right: 8px;
   vertical-align: middle;
 }
+
+
+
+.modal-body-person img {
+  max-height: 300px;
+  object-fit: contain;
+}
