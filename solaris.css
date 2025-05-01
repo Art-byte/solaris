@@ -200,3 +200,26 @@ footer {
     align-items: center;
     padding: 10px 0;
 }
+
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas iguales */
+  gap: 16px; /* espacio entre ítems */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.skills-list li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
