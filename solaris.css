@@ -254,11 +254,11 @@ footer {
 
 
 /* DEFINICION DE FUENTES PARA DISTINAS SECCIONES */
-h1 {
+h1, h2{
   font-family: 'Elegante clasica', sans-serif;
 }
 
-p, li, h5, h2, button, strong {
+p, li, h5, button, strong {
   font-family: 'Times', sans-serif;
 
 }
