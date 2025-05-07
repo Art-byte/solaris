@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Times';
+  src: url('fonts/TIMESS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     background-color: #F3DFE0;
     padding-top: 80px; /* Ajusta según la altura de tu navbar */
@@ -251,7 +258,7 @@ h1 {
   font-family: 'Elegante clasica', sans-serif;
 }
 
-p, li, h5, button, strong {
-  font-family: 'lovera', sans-serif;
+p, li, h5, h2, button, strong {
+  font-family: 'Times', sans-serif;
 
 }
